@@ -51,7 +51,9 @@ document.querySelector("#command-button").addEventListener("click", function () 
 
 // send command to server using request
 async function sendCommand(command) {
-  const url = "http://localhost:5000/answer/" + command;
+  // url encoded command
+  const url = "http://localhost:5000/answer/" + encodeURIComponent(command);
+
   try {
     // make the HTTP request
     const response = await fetch(url);
