@@ -1,0 +1,28 @@
+/* Add some styles to the main container */
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the button and add some hover effects */
+#command-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#command-button:hover {
+    background-color: #0069d9;
+    color: white;
+    border-color: #0062cc;
+}
+
+/* Style the message and result elements */
+#message,
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
